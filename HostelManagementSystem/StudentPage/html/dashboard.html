@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Hostel Management System</title>
+    <link rel="stylesheet" href="../css/dashboard.css"> <!-- Corrected path -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <h2>HOSTEL MANAGEMENT</h2>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active" onclick="loadDashboardContent()"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li><a href="#" onclick="loadCleaningContent()"><i class="fas fa-broom"></i> Room Cleaning</a></li>
+                    <li><a href="#" onclick="loadLaundryContent()"><i class="fas fa-tshirt"></i> Laundry</a></li>
+                    <li><a href="#" onclick="loadSalonContent()"><i class="fas fa-cut"></i> Salon</a></li>
+                    <li><a href="#" onclick="loadIssueSolvingContent()"><i class="fas fa-tools"></i> Issue Solving</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <header>
+                <h1>Welcome to the Student Dashboard</h1>
+                <div class="user-info">
+                    <span class="user-name">Hello, Student</span>
+                    <i class="fas fa-bell"></i>
+                    <div class="profile-dropdown">
+                        <i class="fas fa-user-circle" onclick="toggleDropdown()"></i>
+                        <div class="dropdown-menu" id="dropdownMenu">
+                            <a href="index.html">Logout</a> <!-- Corrected path -->
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section id="content-section">
+                <div class="dashboard-section" id="dashboard-content">
+                    <div class="dashboard-card">
+                        <h3>Next Room Cleaning</h3>
+                        <p>Today</p>
+                    </div>
+                    <div class="dashboard-card">
+                        <h3>Laundry Schedule</h3>
+                        <p>Tomorrow</p>
+                    </div>
+                    <div class="dashboard-card">
+                        <h3>Salon Appointment</h3>
+                        <p>Next Week</p>
+                    </div>
+                    <div class="dashboard-card">
+                        <h3>Pending Issues</h3>
+                        <p>1</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="../scripts/dashboard.js"></script> <!-- Corrected path -->
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Hostel Management System</title>
+    <link rel="stylesheet" href="C:\Users\ngsni\Desktop\HostelManagementSystem\admin\admin.css"> <!-- Link to Admin CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body>
+    <div class="dashboard-container">   
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>ADMIN PANEL</h2>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active" onclick="loadDashboardContent()"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li><a href="#" onclick="loadStudentDetailsContent()"><i class="fas fa-user-graduate"></i> Student Details</a></li>
+                    <li><a href="#" onclick="loadRoomDetailsContent()"><i class="fas fa-door-closed"></i> Room Details</a></li>
+                    <li><a href="#" onclick="loadSupervisorDetailsContent()"><i class="fas fa-user-tie"></i> Supervisor Details</a></li>
+                    <li><a href="#" onclick="loadLostAndFoundContent()"><i class="fas fa-box"></i> Lost and Found</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <header>
+                <h1>Welcome to the Admin Dashboard</h1>
+                <div class="user-info">
+                    <span class="user-name">Hello, Admin</span>
+                    <i class="fas fa-bell"></i>
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </header>
+
+            <!-- Dynamic Content Section -->
+            <section id="content-section">
+                <!-- Default dashboard content goes here -->
+                <div class="dashboard-section" id="dashboard-content">
+                    <div class="dashboard-card">
+                        <h3>Total Students</h3>
+                        <p>120</p>
+                    </div>
+                    <div class="dashboard-card">
+                        <h3>Available Rooms</h3>
+                        <p>15</p>
+                    </div>
+                    <div class="dashboard-card">
+                        <h3>Supervisors</h3>
+                        <p>5</p>
+                    </div>
+                    <div class="dashboard-card">
+                        <h3>Lost Items</h3>
+                        <p>8</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+
+    <script src="C:\Users\ngsni\Desktop\HostelManagementSystem\admin\admin.js"></script> <!-- JavaScript for dynamic content -->
+</body>
+</html>

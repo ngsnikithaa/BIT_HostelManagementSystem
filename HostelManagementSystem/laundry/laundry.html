@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laundry Admin Dashboard - Hostel Management System</title>
+    <link rel="stylesheet" href="laundry.css" />
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>LAUNDRY ADMIN</h2>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" class="active" onclick="loadDashboardContent()"
+                            ><i class="fas fa-home"></i> Dashboard</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" onclick="loadScheduleAppointmentsContent()"
+                            ><i class="fas fa-calendar"></i> Schedule Appointments</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" onclick="loadManageAppointmentsContent()"
+                            ><i class="fas fa-list"></i> Manage Appointments</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" onclick="loadServiceHistoryContent()"
+                            ><i class="fas fa-history"></i> Service History</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <header>
+                <h1>Welcome to the Laundry Admin Dashboard</h1>
+                <div class="user-info">
+                    <span class="user-name">Hello, Admin</span>
+                    <i class="fas fa-bell"></i>
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </header>
+
+            <!-- Dynamic Content Section -->
+            <section id="content-section">
+                <!-- Default dashboard content -->
+            </section>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript -->
+    <script src="laundry.js"></script>
+</body>
+</html>
